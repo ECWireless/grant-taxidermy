@@ -16,6 +16,21 @@
     }
 
     &__link {
+        padding: 1.9rem;
         cursor: pointer;
+
+        &:hover {
+            transition: .5s all ease;
+            background-color: green;
+        }
+    }
+
+    &__link.active {
+        cursor: pointer;
+        align-self: center;
+
+        &:hover {
+            border-bottom: none;
+        }
     }
 }

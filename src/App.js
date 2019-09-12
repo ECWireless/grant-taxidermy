@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import './App.scss';
 
 export default class App extends Component {
+	state = {
+		linkClassActive: "header__link active"
+	}
+
 	render() {
 		return (
 			<div className="container">
 				<header className="header">
 					<ul className="header__list">
-						<li className="header__link">HOME</li>
+						<li className="header__link active">HOME</li>
 						<li className="header__link">SERVICES</li>
 						<li className="header__link">PRICES</li>
 						<li className="header__link">ABOUT</li>
