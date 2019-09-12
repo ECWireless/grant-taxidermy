@@ -5,7 +5,16 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="container">
-				<header className="header">Header</header>
+				<header className="header">
+					<ul className="header__list">
+						<li className="header__link">HOME</li>
+						<li className="header__link">SERVICES</li>
+						<li className="header__link">PRICES</li>
+						<li className="header__link">ABOUT</li>
+						<li className="header__link">PHOTOS</li>
+						<li className="header__link">CONTACT</li>
+					</ul>
+				</header>
 				<div className="banner">Home Banner</div>
 				<div className="services">Services</div>
 				<div className="about">About</div>
