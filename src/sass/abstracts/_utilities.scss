@@ -1,0 +1,22 @@
+.heading-1 {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    color: #8E8C8C;
+}
+
+.heading-3 {
+    font-family: $font-main;
+    color: #8E1300;
+    text-transform: uppercase;
+}
+
+.border-container {
+    display: grid;
+    grid-template-columns: 1fr 90rem 1fr; 
+}
+
+.border-right {
+    grid-column: 2 / -1;
+    border-bottom: 3px solid #8E1300;
+    margin-top: .5rem;
+}

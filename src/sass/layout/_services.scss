@@ -1,0 +1,68 @@
+.services {
+
+    &__heading-container {
+        width: 90rem;
+        margin: 6rem auto 0;
+        text-align: left;
+    }
+
+    &__paragraph-container {
+        width: 90rem;
+        margin: 1rem auto 0;
+        text-align: left;
+        font-family: $font-subheading;
+        color: #8D8D8D;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 30rem 30rem 30rem 1fr;
+        text-align: center;
+        margin-top: 8rem;
+    }
+
+    &__deer-mounts {
+        grid-column: 2 / 3;
+    }
+
+    &__mounts-paragraph {
+        color: #212B36;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    &__game {
+        grid-column: 3 / 4;
+    }
+
+    &__game-paragraph {
+        color: #212B36;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    &__rugs {
+        grid-column: 4 / 5;
+    }
+
+    &__rugs-paragraph {
+        color: #212B36;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    &__prices {
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-family: $font-subheading;
+        font-weight: bold;
+        color: #212B36;
+    }
+
+    &__triangles {
+        margin-top: 2rem;
+        width: 7rem;
+        transform: rotate(180deg);
+    }
+}

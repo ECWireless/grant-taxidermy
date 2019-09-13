@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: fixed;
     background-color: rgba(129, 129, 129, .85);
     color: #fff;
     height: 6rem;
@@ -26,14 +26,16 @@
 
     &__list {
         position: relative;
-        font-size: 1.6rem;
-        height: 100%;
-        max-width: 80rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        height: 100%;
+        max-width: 80rem;
         align-items: center;
+        font-size: 1.6rem;
+        font-family: $font-subheading;
         list-style: none;
+        font-weight: bold;
     }
 
     &__link {
