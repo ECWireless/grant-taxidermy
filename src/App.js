@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
 
+import Logo from './assets/banner/harry-grant-taxidermy-logo-cutout-antlers@2x.png'
+
+// Containers
+import Header from './containers/Header';
+
 export default class App extends Component {
 	state = {
 		linkClassActive: "header__link active"
@@ -9,17 +14,16 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="container">
-				<header className="header">
-					<ul className="header__list">
-						<li className="header__link active">HOME</li>
-						<li className="header__link">SERVICES</li>
-						<li className="header__link">PRICES</li>
-						<li className="header__link">ABOUT</li>
-						<li className="header__link">PHOTOS</li>
-						<li className="header__link">CONTACT</li>
-					</ul>
-				</header>
-				<div className="banner">Home Banner</div>
+				<Header />
+				<div className="banner">
+					<div alt="banner-photo" className="banner__photo" />
+					<div className="banner__logo-container">
+						<img src={Logo} alt="logo" className="banner__logo" />
+					</div>
+					<div className="banner__slogan-container">
+						<h1 className="banner__slogan">Preserving Memories</h1>
+					</div>
+				</div>
 				<div className="services">Services</div>
 				<div className="about">About</div>
 				<div className="photos">Photos</div>
