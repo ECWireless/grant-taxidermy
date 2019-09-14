@@ -38,6 +38,14 @@
         font-family: $font-subheading;
         list-style: none;
         font-weight: bold;
+
+        @include respond(phone) {
+            max-width: 50rem;
+        }
+
+        @include respond(small-phone) {
+            max-width: 30rem;
+        }
     }
 
     &__link {

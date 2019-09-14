@@ -4,6 +4,17 @@
     grid-template-rows: 12rem 50rem 42rem;
     margin-top: 8rem;
 
+    @include respond(phone) {
+        grid-template-columns: 1fr 30rem 30rem 1fr;
+        grid-template-rows: 11rem 50rem 42rem;
+    }
+
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 17rem 17rem 1fr;
+        grid-template-rows: 11rem 50rem 42rem;
+        margin-top: 6rem;
+    }
+
     &__heading-1 {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
@@ -26,12 +37,24 @@
         font-family: $font-subheading;
         color: #8D8D8D;
         text-align: right;
+
+        @include respond(small-phone) {
+            grid-column: 2 / 4;
+        }
     }
 
     &__deer-photo {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         align-self: center;
+
+        @include respond(phone) {
+            width: 25rem;
+        }
+
+        @include respond(small-phone) {
+            max-width: 14rem;
+        }
     }
 
     &__shoulder-mount-container {
@@ -80,7 +103,7 @@
         grid-column: 3 / -1;
         grid-row: 3 / 4;
         height: 18rem;
-        width: 2rem;
+        width: 3rem;
         align-self: center;
         background-color: #E1E1E1;
         justify-self: flex-end;

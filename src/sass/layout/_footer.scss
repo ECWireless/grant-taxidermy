@@ -6,6 +6,10 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
+    @include respond(phone) {
+        margin-top: 6rem;
+    }
+
     &__triangle-left {
         grid-column: 1 / 2;
         width: 12rem;
