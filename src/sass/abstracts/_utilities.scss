@@ -2,12 +2,21 @@
     font-family: $font-heading;
     text-transform: uppercase;
     color: #8E8C8C;
+    font-size: 3.6rem;
+}
+
+.heading-2 {
+    font-family: $font-main;
+    color: #212B36;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .heading-3 {
     font-family: $font-main;
     color: #8E1300;
     text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .border-container {

@@ -1,0 +1,78 @@
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 90rem 1fr;
+    grid-template-rows: 12rem 120rem 12rem;
+    margin-top: 8rem;
+
+    &__heading-1 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        text-align: right;
+    }
+
+    &__border {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        align-self: center;
+        border-bottom: 3px solid #8E1300;
+        margin-top: .5rem;
+    }
+
+    &__paragraph-1 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        align-self: flex-end;
+
+        font-family: $font-subheading;
+        color: #8D8D8D;
+        text-align: right;
+    }
+
+    &__photos-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    &__photo-1 {
+        width: 28rem;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    &__photo-2 {
+        width: 28rem;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    &__photo-3 {
+        width: 28rem;
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+
+    &__photo-4 {
+        width: 28rem;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    &__photo-5 {
+        width: 28rem;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    &__photo-6 {
+        width: 28rem;
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+
+    &__photo-7 {
+        width: 28rem;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}

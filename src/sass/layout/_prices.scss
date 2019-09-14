@@ -1,0 +1,102 @@
+.prices {
+    display: grid;
+    grid-template-columns: 1fr 45rem 45rem 1fr;
+    grid-template-rows: 12rem 50rem 42rem;
+    margin-top: 8rem;
+
+    &__heading-1 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        text-align: right;
+    }
+
+    &__border {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        align-self: center;
+        border-bottom: 3px solid #8E1300;
+        margin-top: .5rem;
+    }
+
+    &__paragraph-1 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        align-self: flex-end;
+
+        font-family: $font-subheading;
+        color: #8D8D8D;
+        text-align: right;
+    }
+
+    &__deer-photo {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: center;
+    }
+
+    &__shoulder-mount-container {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+
+        margin-top: 8rem;
+        justify-self: center;
+    }
+
+    &__other-mount-container {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+
+        margin-top: 2rem;
+        justify-self: center;
+    }
+
+    &__paragraph-2-container {
+        margin-top: 2rem;
+    }
+
+    &__paragraph-2 {
+        font-family: $font-subheading;
+        color: #8D8D8D;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    &__note {
+        grid-column: 3 / -1;
+        grid-row: 3 / 4;
+        height: 18rem;
+        align-self: center;
+        background-color: #E1E1E1;
+        box-shadow: 5px 5px 6px rgba(0,0,0,.6);
+
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 4rem;
+    }
+
+    &__note-block {
+        grid-column: 3 / -1;
+        grid-row: 3 / 4;
+        height: 18rem;
+        width: 2rem;
+        align-self: center;
+        background-color: #E1E1E1;
+        justify-self: flex-end;
+    }
+
+    &__note-heading {
+        font-family: $font-heading;
+        color: #8E1300;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+
+    &__note-paragraph {
+        font-family: $font-subheading;
+        color: #212B36;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
