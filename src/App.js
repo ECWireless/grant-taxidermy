@@ -9,9 +9,11 @@ import Prices from './containers/Prices';
 import About from './containers/About';
 import Photos from './containers/Photos';
 import Testimonials from './containers/Testimonials';
+import Contact from './containers/Contact';
 
-// Photos
-import Logo from './assets/banner/harry-grant-taxidermy-logo-cutout-antlers-2@2x.png'
+// Shapes
+import headerTriangle from "./assets/shapes/triangle-dark-3.png";
+import footerLogo from './assets/footer/harry-grant-taxidermy-logo-cutout-antlers-1@2x.png';
 
 export default class App extends Component {
 
@@ -25,54 +27,18 @@ export default class App extends Component {
 				<About />
 				<Photos />
 				<Testimonials />
+				<Contact />
 				
-				<div className="contact">
-					<h1 className="contact__heading-1 heading-1">Contact</h1>
-					<div className="contact__border" />
-					<p className="contact__paragraph-1">Give us a ring</p>
-
-					<div className="contact__background">
-						<div className="contact__container">
-							<img src={Logo} alt="contact-logo" className="contact__logo" />
-							<div className="contact__info">
-								<div className="contact__info-paragraph-1">5392 Hardt Road</div>
-								<div className="contact__info-paragraph-1">Gibsonia PA, 15044</div>
-								<br/>
-								<br/>
-								<div className="contact__info-paragraph-1">info@harrygranttaxidermy.com</div>
-								<br/>
-								<br/>
-								<div className="contact__info-paragraph-2">412-400-7308</div>
-								<br/>
-								<br/>
-								<br/>
-								<br/>
-								<div className="contact__info-paragraph-3">Hours:</div>
-								<br/>
-								<div className="contact__info-paragraph-4">Mon - Fri: 9am - 7pm</div>
-								<div className="contact__info-paragraph-4">Saturday: 9am - 10am</div>
-								<div className="contact__info-paragraph-4">Sunday: 9am - 6pm</div>
-							</div>
-							<div className="contact__form">
-								<label htmlFor="name">Name</label>
-								<input type="text" id="name" />
-								<br/>
-								<label htmlFor="email">Email</label>
-								<input type="email" id="email" />
-								<br/>
-								<label htmlFor="subject">Subject</label>
-								<input type="text" id="subject" />
-								<br/>
-								<label htmlFor="message">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10"></textarea>
-								<br/>
-								<button className="contact__button">Submit</button>
-							</div>
-						</div>
+				<footer className="footer">
+					<img src={headerTriangle} alt="footer-triangle-left" className="footer__triangle-left" />
+					<p className="footer__facebook">Follow us on Facebook</p>
+					<div className="footer__middle-container">
+						<img src={footerLogo} alt="footer-logo" className="footer__logo"/>
+						<p className="footer__credit">Website created by Valtech Creative</p>
 					</div>
-					<div className="contact__background-block" />
-				</div>
-				<footer className="footer">Footer</footer>
+					<p className="footer__number">412-400-7308</p>
+					<img src={headerTriangle} alt="footer-triangle-right" className="footer__triangle-right" />
+				</footer>
 			</div>
 		)
 	}
