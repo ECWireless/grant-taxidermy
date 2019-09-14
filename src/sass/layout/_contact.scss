@@ -1,0 +1,40 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 30rem 30rem 30rem 1fr;
+    grid-template-rows: 12rem 60rem;
+    margin-top: 8rem;
+
+    &__heading-1 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        text-align: right;
+    }
+
+    &__border {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        align-self: center;
+        border-bottom: 3px solid #8E1300;
+        margin-top: .5rem;
+    }
+
+    &__paragraph-1 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        align-self: center;
+        margin-top: 5rem;
+
+        font-family: $font-subheading;
+        color: #8D8D8D;
+        text-align: right;
+    }
+
+    &__background {
+        grid-column: 1 / 5;
+        background-color: #E1E1E1;
+        box-shadow: 5px 5px 6px rgba(0,0,0,.6);
+        border-radius: 30px;
+
+        margin-top: 4rem;
+    }
+}

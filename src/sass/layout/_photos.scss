@@ -1,17 +1,17 @@
 .photos {
     display: grid;
-    grid-template-columns: 1fr 90rem 1fr;
-    grid-template-rows: 12rem 120rem 12rem;
+    grid-template-columns: 1fr 45rem 45rem 1fr;
+    grid-template-rows: 12rem 60rem 12rem;
     margin-top: 8rem;
 
     &__heading-1 {
-        grid-column: 4 / 5;
+        grid-column: 3 / 4;
         grid-row: 1 / 2;
         text-align: right;
     }
 
     &__border {
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         grid-row: 1 / 2;
         align-self: center;
         border-bottom: 3px solid #8E1300;
@@ -19,7 +19,7 @@
     }
 
     &__paragraph-1 {
-        grid-column: 4 / 5;
+        grid-column: 3 / 4;
         grid-row: 1 / 2;
         align-self: flex-end;
 
@@ -29,50 +29,38 @@
     }
 
     &__photos-container {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        margin-top: 6rem;
     }
 
-    &__photo-1 {
-        width: 28rem;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+    &__photo {
+        width: 20rem;
+        justify-self: center;
+        align-self: center;
+        margin-top: 2rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
-    &__photo-2 {
-        width: 28rem;
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-    }
+    &__facebook {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
 
-    &__photo-3 {
-        width: 28rem;
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
-    }
+        justify-self: center;
+        align-self: flex-end;
 
-    &__photo-4 {
-        width: 28rem;
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-    }
+        margin-top: 4rem;
 
-    &__photo-5 {
-        width: 28rem;
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-    }
-
-    &__photo-6 {
-        width: 28rem;
-        grid-column: 4 / 5;
-        grid-row: 3 / 4;
-    }
-
-    &__photo-7 {
-        width: 28rem;
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
+        font-family: $font-main;
+        color: #212B36;
+        text-transform: uppercase;
     }
 }
