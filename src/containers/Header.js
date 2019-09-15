@@ -2,6 +2,7 @@ import React from 'react';
 
 // Shapes
 import headerTriangle from "../assets/shapes/triangle-dark-3.png";
+import { ReactComponent as MenuButton } from '../assets/svgs/menu.svg';
 
 export default function Header(props) {
     return (
@@ -16,6 +17,7 @@ export default function Header(props) {
                 <li className="header__link" onClick={props.handleScrollContact}>CONTACT</li>
             </ul>
             <img src={headerTriangle} alt="header-triangle" className="header__triangle-2" />
+            <MenuButton onClick={props.onMenuHandler} className="header__menu" />
         </header>
     )
 }

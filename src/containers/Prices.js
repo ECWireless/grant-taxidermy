@@ -55,10 +55,13 @@ export default function Prices() {
 
             <div className="prices__note">
                 <p className="prices__note-heading">Please Note</p>
-                <p className="prices__note-paragraph">Deposit required at time of drop off</p>
-                <p className="prices__note-paragraph">All prices are subject to change</p>
-                <p className="prices__note-paragraph">All proper tags must accompany mount</p>
-                <p className="prices__note-paragraph">All hides are professionally tanned</p>
+                <ul>
+                    <li className="prices__note-paragraph">Deposit required at time of drop off</li>
+                    <li className="prices__note-paragraph">All prices are subject to change</li>
+                    <li className="prices__note-paragraph">All proper tags must accompany mount</li>
+                    <li className="prices__note-paragraph">All hides are professionally tanned</li>
+                </ul>
+                
             </div>
             <div className="prices__note-block" />
         </div>

@@ -24,6 +24,25 @@
         right: -.5rem;
         width: 5.8rem;
         transform: rotate(-90deg);
+
+        @include respond(small-phone) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: none;
+
+        @include respond(small-phone) {
+            display: inline;
+            position: absolute;
+            fill: #8E1300;
+            top: 1rem;
+            right: 1rem;
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+        }
     }
 
     &__list {
@@ -44,7 +63,7 @@
         }
 
         @include respond(small-phone) {
-            max-width: 30rem;
+            display: none;
         }
     }
 

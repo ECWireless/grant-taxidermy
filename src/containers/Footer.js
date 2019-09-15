@@ -11,7 +11,15 @@ export default function Footer() {
             <p className="footer__facebook">Follow us on Facebook</p>
             <div className="footer__middle-container">
                 <img src={footerLogo} alt="footer-logo" className="footer__logo"/>
-                <p className="footer__credit">Website created by Valtech Creative</p>
+                <p className="footer__credit">Website created by 
+                    <a
+                        href="https://www.valtechcreative.com/"
+                        className="footer__link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        > Valtech Creative
+                    </a>
+                </p>
             </div>
             <p className="footer__number">412-400-7308</p>
             <img src={headerTriangle} alt="footer-triangle-right" className="footer__triangle-right" />

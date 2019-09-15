@@ -10,7 +10,7 @@
     }
 
     @include respond(small-phone) {
-        grid-template-columns: 1fr 15rem 15rem 1fr;
+        grid-template-columns: 1fr 17rem 17rem 1fr;
     }
 
     &__heading-1 {
@@ -35,6 +35,10 @@
         font-family: $font-subheading;
         color: #8D8D8D;
         text-align: right;
+
+        @include respond(small-phone) {
+            grid-column: 2 / 4;
+        }
     }
 
     &__photos-container {
@@ -46,6 +50,12 @@
         grid-template-rows: repeat(3, 1fr);
 
         margin-top: 6rem;
+
+        @include respond(small-phone) {
+            margin-top: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
     }
 
     &__photo {
@@ -61,7 +71,7 @@
         }
 
         @include respond(small-phone) {
-            width: 7rem;
+            width: 10rem;
         }
 
         &:hover {
@@ -83,5 +93,10 @@
         font-family: $font-main;
         color: #212B36;
         text-transform: uppercase;
+
+        @include respond(small-phone) {
+            align-self: center;
+            margin-top: 2rem;
+        }
     }
 }

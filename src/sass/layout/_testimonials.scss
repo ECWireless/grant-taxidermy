@@ -10,7 +10,7 @@
     }
 
     @include respond(small-phone) {
-        grid-template-columns: 1fr 7rem 16.5rem 7rem 1fr;
+        grid-template-columns: 1fr 17rem 17rem 1fr;
     }
 
     &__heading-1 {
@@ -43,6 +43,10 @@
 
         text-align: center;
         margin-top: 7rem;
+
+        @include respond(small-phone) {
+            grid-column: 2 / 4;
+        }
     }
 
     &__testimonial-1 {

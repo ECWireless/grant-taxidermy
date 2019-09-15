@@ -8,7 +8,7 @@
     }
 
     @include respond(small-phone) {
-        height: 70rem;
+        height: 60rem;
     }
 
     &__photo {
@@ -24,11 +24,11 @@
         margin-top: -80rem;
 
         @include respond(phone) {
-            margin-top: -90%;
+            margin-top: -70rem;
         }
 
         @include respond(small-phone) {
-            margin-top: -130%;
+            margin-top: -50rem;
         }
     }
 
@@ -38,18 +38,22 @@
     }
 
     &__logo {
-        max-width: 60rem;
+        width: 60rem;
+        height: 60rem;
 
         @include respond(tab-land) {
-            max-width: 50rem;
+            width: 50rem;
+            height: 50rem;
         }
 
         @include respond(phone) {
-            max-width: 40rem;
+            width: 40rem;
+            height: 40rem;
         }
 
         @include respond(small-phone) {
-            max-width: 30rem;
+            width: 25rem;
+            height: 25rem;
         }
     }
 

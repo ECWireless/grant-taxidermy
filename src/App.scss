@@ -3,6 +3,7 @@
 @import "sass/abstracts/utilities";
 
 @import "sass/layout/header";
+@import "sass/layout/sidebar";
 @import "sass/layout/banner";
 @import "sass/layout/services";
 @import "sass/layout/prices";
@@ -11,5 +12,7 @@
 @import "sass/layout/testimonials";
 @import "sass/layout/contact";
 @import "sass/layout/footer";
+
+@import "sass/components/backdrop";
 
 @import "sass/base";
