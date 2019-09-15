@@ -106,17 +106,78 @@
         left: 50%;
         transform: translate(-50%, -50%);
         height: 80vh;
+        width: 80vh;
         border: 3px solid #8E1300;
         z-index: 20;
 
         @include respond(phone) {
-            width: 80vw;
-            height: auto;
+            width: 70vw;
+            height: 70vw;
         }
 
         @include respond(small-phone) {
             width: 80vw;
-            height: auto;
+            height: 80vw;
+        }
+    }
+
+    &__selected-photo {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__close {
+        fill: #fff;
+        width: 3rem;
+        height: 3rem;
+        position: fixed;
+        right: 0;
+        top: -5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__left-arrow {
+        fill: #fff;
+        width: 5rem;
+        height: 5rem;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10rem;
+        z-index: 21;
+
+        @include respond(small-phone) {
+            width: 4rem;
+            height: 4rem;
+            left: 2rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__right-arrow {
+        fill: #fff;
+        width: 5rem;
+        height: 5rem;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -10rem;
+        z-index: 21;
+
+        @include respond(small-phone) {
+            width: 4rem;
+            height: 4rem;
+            right: 2rem;
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 }

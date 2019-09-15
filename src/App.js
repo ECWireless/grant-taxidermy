@@ -12,10 +12,8 @@ import Testimonials from './containers/Testimonials';
 import Contact from './containers/Contact';
 import Footer from './containers/Footer';
 
-import Backdrop from './components/Backdrop';
-
-// Shapes
-import { ReactComponent as CloseButton } from './assets/svgs/cross.svg';
+// Components
+import Sidebar from './components/Sidebar';
 
 export default class App extends Component {
 	state = {
@@ -120,19 +118,17 @@ export default class App extends Component {
 					handleScrollPhotos={this.handleScrollPhotos}
 					handleScrollContact={this.handleScrollContact}
 				/>
-				<div className={this.state.menuOpen ? "sidebar-open" : "sidebar-closed"}>
-					<div className="sidebar-container">
-						<CloseButton className="sidebar-close" onClick={this.onMenuHandler} />
-						<h2 className="sidebar-text" onClick={this.sidebarScrollServices}>Services</h2>
-						<h2 className="sidebar-text" onClick={this.sidebarScrollPrices}>Prices</h2>
-						<h2 className="sidebar-text" onClick={this.sidebarScrollAbout}>About</h2>
-						<h2 className="sidebar-text" onClick={this.sidebarScrollPhotos}>Photos</h2>
-						<h2 className="sidebar-text" onClick={this.sidebarScrollTestimonials}>Testimonials</h2>
-						<h2 className="sidebar-text" onClick={this.sidebarScrollContact}>Contact</h2>
-					</div>
-				</div>
-
-				{this.state.menuOpen && <div onClick={this.onMenuHandler} ><Backdrop /></div>}
+				
+				<Sidebar
+					menuOpen={this.state.menuOpen}
+					onMenuHandler={this.onMenuHandler}
+					sidebarScrollServices={this.sidebarScrollServices}
+					sidebarScrollPrices={this.sidebarScrollPrices}
+					sidebarScrollAbout={this.sidebarScrollAbout}
+					sidebarScrollPhotos={this.sidebarScrollPhotos}
+					sidebarScrollTestimonials={this.sidebarScrollTestimonials}
+					sidebarScrollContact={this.sidebarScrollContact}
+				/>
 				
 				<Banner />
 
