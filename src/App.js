@@ -122,7 +122,7 @@ export default class App extends Component {
 				/>
 				<div className={this.state.menuOpen ? "sidebar-open" : "sidebar-closed"}>
 					<div className="sidebar-container">
-						<CloseButton className="sidebar-close" />
+						<CloseButton className="sidebar-close" onClick={this.onMenuHandler} />
 						<h2 className="sidebar-text" onClick={this.sidebarScrollServices}>Services</h2>
 						<h2 className="sidebar-text" onClick={this.sidebarScrollPrices}>Prices</h2>
 						<h2 className="sidebar-text" onClick={this.sidebarScrollAbout}>About</h2>

@@ -1,5 +1,5 @@
 .sidebar-open {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #8E8C8C;
@@ -33,7 +33,7 @@
 }
 
 .sidebar-closed {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -30rem;
     background-color: #8E8C8C;
