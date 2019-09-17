@@ -29,22 +29,22 @@ export default function Contact() {
 
                 <form action="#" className="form">
                     <div className="form__group">
-                            <input type="text" className="form__input" placeholder="Full Name" id="name" required />
+                            <input type="text" className="form__input" placeholder="Name" id="name" required />
                             <label htmlFor="name" className="form__label">Name</label>
                     </div>
 
                     <div className="form__group">
-                            <input type="email" className="form__input" placeholder="Email Address" id="email" required />
+                            <input type="email" className="form__input" placeholder="Email" id="email" required />
                             <label htmlFor="email" className="form__label">Email</label>
                     </div>
 
                     <div className="form__group">
-                            <input type="tel" className="form__input" placeholder="Phone Number" id="phone" required />
+                            <input type="tel" className="form__input" placeholder="Subject" id="phone" required />
                             <label htmlFor="phone" className="form__label">Subject</label>
                     </div>
 
                     <div className="form__group">
-                            <textarea className="form__input" placeholder="Your Message" id="message" required />
+                            <textarea className="form__input" placeholder="Message" id="message" required />
                             <label htmlFor="message" className="form__label">Message</label>
                     </div>
                     <button className="contact__button">Submit</button>

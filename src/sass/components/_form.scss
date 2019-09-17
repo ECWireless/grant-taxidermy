@@ -11,9 +11,8 @@
     text-align: center;
 
     @include respond(phone) {
-        grid-column: 2 / 4;
+        grid-column: 3 / 5;
         justify-self: center;
-        width: 90%;
         padding-left: 7rem;
     }
 
@@ -21,6 +20,7 @@
         grid-column: 1 / -1;
         grid-row: 3 / 4;
         margin-top: 0;
+        padding: 0;
     }
 
     &__group:not(:last-child) {
@@ -37,6 +37,14 @@
         margin: 0 auto;
         display: block;
         transition: border-bottom .3s, box-shadow .3s, transform .3s ease;
+
+        @include respond(phone) {
+            width: 30rem;
+        }
+
+        @include respond(small-phone) {
+            width: 28rem;
+        }
 
         &:focus {
             outline: none;

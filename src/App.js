@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "scroll-behavior-polyfill";
 import './App.scss';
 
 // Containers
@@ -34,7 +35,7 @@ export default class App extends Component {
 	}
 
 	handleScrollHome = () => {
-		window.scrollTo({
+		window.scroll({
 			top: 0,
 			behavior: 'smooth'
 		});
