@@ -23,7 +23,7 @@
         grid-column: 1 / 4;
         grid-row: 1 / 2;
         align-self: center;
-        border-bottom: 3px solid #8E1300;
+        border-bottom: 3px solid $color-red;
         margin-top: .5rem;
     }
 
@@ -33,7 +33,7 @@
         align-self: flex-end;
 
         font-family: $font-subheading;
-        color: #8D8D8D;
+        color: $color-grey;
         text-align: right;
 
         @include respond(small-phone) {
@@ -76,7 +76,7 @@
 
         &:hover {
             cursor: pointer;
-            box-shadow: 0px 5px 6px rgba(0,0,0,.6);
+            box-shadow: $shadow;
             transform: scale(1.02);
         }
     }
@@ -91,7 +91,7 @@
         margin-top: 4rem;
 
         font-family: $font-main;
-        color: #212B36;
+        color: $color-blue;
         text-transform: uppercase;
 
         @include respond(small-phone) {
@@ -107,7 +107,7 @@
         transform: translate(-50%, -50%);
         height: 80vh;
         width: 80vh;
-        border: 3px solid #8E1300;
+        border: 3px solid $color-red;
         z-index: 20;
 
         @include respond(phone) {
@@ -127,7 +127,7 @@
     }
 
     &__close {
-        fill: #fff;
+        fill: $color-white;
         width: 3rem;
         height: 3rem;
         position: fixed;
@@ -140,7 +140,7 @@
     }
 
     &__left-arrow {
-        fill: #fff;
+        fill: $color-white;
         width: 5rem;
         height: 5rem;
         position: fixed;
@@ -152,7 +152,8 @@
         @include respond(small-phone) {
             width: 4rem;
             height: 4rem;
-            left: 2rem;
+            top: 92vw;
+            left: 1rem;
         }
 
         &:hover {
@@ -161,7 +162,7 @@
     }
 
     &__right-arrow {
-        fill: #fff;
+        fill: $color-white;
         width: 5rem;
         height: 5rem;
         position: fixed;
@@ -172,8 +173,8 @@
 
         @include respond(small-phone) {
             width: 4rem;
-            height: 4rem;
-            right: 2rem;
+            top: 92vw;
+            right: 1rem;
         }
 
         &:hover {

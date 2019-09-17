@@ -23,7 +23,7 @@
         grid-column: 2 / -1;
         grid-row: 1 / 2;
         align-self: center;
-        border-bottom: 3px solid #8E1300;
+        border-bottom: 3px solid $color-red;
         margin-top: .5rem;
     }
 
@@ -33,7 +33,7 @@
         align-self: flex-end;
 
         font-family: $font-subheading;
-        color: #8D8D8D;
+        color: $color-grey;
         text-align: left;
     }
 
@@ -50,13 +50,13 @@
     }
 
     &__testimonial-1 {
-        color: #888C8D;
+        color: $color-grey;
         font-family: $font-main;
         font-size: 1.6rem;
     }
 
     &__name-1 {
-        color: #888C8D;
+        color: $color-grey;
         font-family: $font-main;
         font-size: 1.6rem;
         text-transform: uppercase;
@@ -64,14 +64,14 @@
     }
 
     &__testimonial-2 {
-        color: #888C8D;
+        color: $color-grey;
         font-family: $font-main;
         font-size: 1.6rem;
         margin-top: 4rem;
     }
 
     &__name-2 {
-        color: #888C8D;
+        color: $color-grey;
         font-family: $font-main;
         font-size: 1.6rem;
         text-transform: uppercase;

@@ -1,13 +1,13 @@
 .heading-1 {
     font-family: $font-heading;
     text-transform: uppercase;
-    color: #8E8C8C;
+    color: $color-grey;
     font-size: 3.6rem;
 }
 
 .heading-2 {
     font-family: $font-main;
-    color: #212B36;
+    color: $color-blue;
     font-size: 2.4rem;
     font-weight: bold;
 
@@ -18,7 +18,7 @@
 
 .heading-3 {
     font-family: $font-main;
-    color: #8E1300;
+    color: $color-red;
     text-transform: uppercase;
     font-size: 2rem;
 
@@ -34,6 +34,6 @@
 
 .border-right {
     grid-column: 2 / -1;
-    border-bottom: 3px solid #8E1300;
+    border-bottom: 3px solid $color-red;
     margin-top: .5rem;
 }

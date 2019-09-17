@@ -29,7 +29,7 @@
         grid-column: 2 / -1;
         grid-row: 1 / 2;
         align-self: center;
-        border-bottom: 3px solid #8E1300;
+        border-bottom: 3px solid $color-red;
         margin-top: .5rem;
     }
 
@@ -71,7 +71,7 @@
     &__paragraph-1 {
         font-family: $font-main;
         font-size: 1.2rem;
-        color: #000000;
+        color: $color-black;
         max-width: 24rem;
         text-align: center;
 
@@ -94,7 +94,7 @@
     &__paragraph-2 {
         font-family: $font-main;
         font-size: 1.2rem;
-        color: #000000;
+        color: $color-black;
         max-width: 14rem;
         text-align: center;
         z-index: 2;

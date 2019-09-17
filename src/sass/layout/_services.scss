@@ -70,7 +70,7 @@
     }
 
     &__mounts-paragraph {
-        color: #212B36;
+        color: $color-blue;
         font-size: 1.4rem;
         margin-top: 1rem;
 
@@ -109,7 +109,7 @@
     }
 
     &__game-paragraph {
-        color: #212B36;
+        color: $color-blue;
         font-size: 1.4rem;
         margin-top: 1rem;
 
@@ -148,7 +148,7 @@
     }
 
     &__rugs-paragraph {
-        color: #212B36;
+        color: $color-blue;
         font-size: 1.4rem;
         margin-top: 1rem;
 
@@ -163,7 +163,7 @@
         font-size: 1.4rem;
         font-family: $font-subheading;
         font-weight: bold;
-        color: #212B36;
+        color: $color-blue;
     }
 
     &__triangles {

@@ -1,0 +1,72 @@
+// CONTACT FORM
+
+.form {
+    grid-column: 4 / 5;
+    grid-row: 2 / -1;
+    align-self: center;
+    margin-top: 6rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    z-index: 2;
+    text-align: center;
+
+    @include respond(phone) {
+        grid-column: 2 / 4;
+        justify-self: center;
+        width: 90%;
+        padding-left: 7rem;
+    }
+
+    @include respond(small-phone) {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        margin-top: 0;
+    }
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.2rem;
+        padding: 1.5rem 0rem 1.5rem 1.5rem;
+        border-radius: 4px;
+        background-color: rgba(#fff, .5);
+        border: 1px solid $color-grey;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        transition: border-bottom .3s, box-shadow .3s, transform .3s ease;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+            border-bottom: 3px solid rgb(69, 209, 90);
+            transform: scale(1.01);
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-red;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-blue;
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+        text-align: left;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
