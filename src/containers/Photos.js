@@ -6,16 +6,16 @@ import Backdrop from '../components/Backdrop';
 // Photos
 import Photo1 from '../assets/photos/whitetail-1-harry-grant-taxidermy.png';
 import Photo2 from '../assets/photos/whitetail-2-harry-grant-taxidermy.png';
-import Photo3 from '../assets/photos/whitetail-3-harry-grant-taxidermy.png';
-import Photo4 from '../assets/photos/whitetail-4-harry-grant-taxidermy.png';
-import Photo5 from '../assets/photos/whitetail-5-harry-grant-taxidermy.png';
-import Photo6 from '../assets/photos/whitetail-6-harry-grant-taxidermy.png';
-import Photo7 from '../assets/photos/rainbow-trout-1-harry-grant-taxidermy.png';
+import Photo3 from '../assets/photos/whitetail-5-harry-grant-taxidermy.png';
+import Photo4 from '../assets/photos/whitetail-6-harry-grant-taxidermy.png';
+import Photo5 from '../assets/photos/whitetail-3-harry-grant-taxidermy.png';
+import Photo6 from '../assets/photos/whitetail-4-harry-grant-taxidermy.png';
+import Photo7 from '../assets/photos/antelope-1-harry-grant-taxidermy.png';
 import Photo8 from '../assets/photos/oribi-1-harry-grant-taxidermy.png';
-import Photo9 from '../assets/photos/largemouth-bass-1-harry-grant-taxidermy.png';
-import Photo10 from '../assets/photos/blesbok-1-harry-grant-taxidermy.png';
+import Photo9 from '../assets/photos/blesbok-1-harry-grant-taxidermy.png';
+import Photo10 from '../assets/photos/rainbow-trout-1-harry-grant-taxidermy.png';
 import Photo11 from '../assets/photos/black-bear-1-harry-grant-taxidermy.png';
-import Photo12 from '../assets/photos/antelope-1-harry-grant-taxidermy.png';
+import Photo12 from '../assets/photos/largemouth-bass-1-harry-grant-taxidermy.png';
 
 // Shapes
 import { ReactComponent as RightArrow } from '../assets/svgs/circle-right.svg';

@@ -1,16 +1,17 @@
 .photos {
     display: grid;
     grid-template-columns: 1fr 45rem 45rem 1fr;
-    grid-template-rows: 12rem 60rem 12rem;
+    grid-template-rows: 12rem 105rem 12rem;
     margin-top: 8rem;
 
     @include respond(phone) {
         grid-template-columns: 1fr 30rem 30rem 1fr;
-        grid-template-rows: 11rem 40rem 11rem;
+        grid-template-rows: 11rem 65rem 11rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr 17rem 17rem 1fr;
+        grid-template-rows: 11rem 40rem 11rem;
     }
 
     &__heading-1 {
@@ -46,8 +47,8 @@
         grid-row: 2 / 3;
 
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
 
         margin-top: 6rem;
 
@@ -59,7 +60,7 @@
     }
 
     &__photo {
-        width: 20rem;
+        width: 25rem;
         justify-self: center;
         align-self: center;
         margin-top: 2rem;
@@ -67,7 +68,7 @@
         transition: .3s all ease;
 
         @include respond(phone) {
-            width: 13rem;
+            width: 15rem;
         }
 
         @include respond(small-phone) {
