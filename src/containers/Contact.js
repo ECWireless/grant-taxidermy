@@ -1,11 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react'
 
 // Photos
 import Logo from '../assets/banner/harry-grant-taxidermy-logo-cutout-antlers-2@2x.png';
 
-export default function Contact() {
-    return (
-        <div className="contact">
+export default class Contact extends Component {
+
+    state = {
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    }
+
+    handleNameChange = e => {
+        this.setState({
+            name: e.target.value,
+        })
+    }
+
+    handleEmailChange = e => {
+        this.setState({
+            email: e.target.value,
+        })
+    }
+
+    handleSubjectChange = e => {
+        this.setState({
+            subject: e.target.value,
+        })
+    }
+
+    handleMessageChange = e => {
+        this.setState({
+            message: e.target.value,
+        })
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const { name, email, subject, message } = this.state;
+        console.log('submitted');
+    }
+
+    render() {
+        return (
+            <div className="contact">
             <h1 className="contact__heading-1 heading-1">Contact</h1>
             <div className="contact__border" />
             <p className="contact__paragraph-1">Give us a ring</p>
@@ -27,45 +66,38 @@ export default function Contact() {
                     <div className="contact__info-paragraph-4">Sunday: 9am - 6pm</div>
                 </div>
 
-                <form action="#" className="form">
+                <form onSubmit={this.handleSubmit} className="form">
                     <div className="form__group">
-                            <input type="text" className="form__input" placeholder="Name" id="name" required />
+                            <input type="text" className="form__input" placeholder="Name" id="name" required
+                                onChange={this.handleNameChange}
+                            />
                             <label htmlFor="name" className="form__label">Name</label>
                     </div>
 
                     <div className="form__group">
-                            <input type="email" className="form__input" placeholder="Email" id="email" required />
+                            <input type="email" className="form__input" placeholder="Email" id="email" required
+                                onChange={this.handleEmailChange}
+                            />
                             <label htmlFor="email" className="form__label">Email</label>
                     </div>
 
                     <div className="form__group">
-                            <input type="tel" className="form__input" placeholder="Subject" id="phone" required />
+                            <input type="tel" className="form__input" placeholder="Subject" id="phone" required
+                                onChange={this.handleSubjectChange}
+                            />
                             <label htmlFor="phone" className="form__label">Subject</label>
                     </div>
 
                     <div className="form__group">
-                            <textarea className="form__input" placeholder="Message" id="message" required />
+                            <textarea className="form__input" placeholder="Message" id="message" required
+                                onChange={this.handleMessageChange}
+                            />
                             <label htmlFor="message" className="form__label">Message</label>
                     </div>
-                    <button className="contact__button">Submit</button>
+                    <button type="submit" className="contact__button">Submit</button>
                 </form>
-{/*                 
-                <div className="contact__form">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" id="name" />
-                    <br/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" />
-                    <br/>
-                    <label htmlFor="subject">Subject</label>
-                    <input type="text" id="subject" />
-                    <br/>
-                    <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <br/>
-                    
-                </div> */}
             <div className="contact__background-block" />
         </div>
-    )
+        )
+    }
 }
