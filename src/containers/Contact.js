@@ -5,42 +5,42 @@ import Logo from '../assets/banner/harry-grant-taxidermy-logo-cutout-antlers-2@2
 
 export default class Contact extends Component {
 
-    state = {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-    }
+    // state = {
+    //     name: '',
+    //     email: '',
+    //     subject: '',
+    //     message: '',
+    // }
 
-    handleNameChange = e => {
-        this.setState({
-            name: e.target.value,
-        })
-    }
+    // handleNameChange = e => {
+    //     this.setState({
+    //         name: e.target.value,
+    //     })
+    // }
 
-    handleEmailChange = e => {
-        this.setState({
-            email: e.target.value,
-        })
-    }
+    // handleEmailChange = e => {
+    //     this.setState({
+    //         email: e.target.value,
+    //     })
+    // }
 
-    handleSubjectChange = e => {
-        this.setState({
-            subject: e.target.value,
-        })
-    }
+    // handleSubjectChange = e => {
+    //     this.setState({
+    //         subject: e.target.value,
+    //     })
+    // }
 
-    handleMessageChange = e => {
-        this.setState({
-            message: e.target.value,
-        })
-    }
+    // handleMessageChange = e => {
+    //     this.setState({
+    //         message: e.target.value,
+    //     })
+    // }
 
-    handleSubmit(e) {
-        e.preventDefault();
-        const { name, email, subject, message } = this.state;
-        console.log('submitted');
-    }
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const { name, email, subject, message } = this.state;
+    //     console.log('submitted');
+    // }
 
     render() {
         return (

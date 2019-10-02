@@ -8,7 +8,13 @@ export default function Footer() {
     return (
         <footer className="footer">
             <img src={headerTriangle} alt="footer-triangle-left" className="footer__triangle-left" />
-            <p className="footer__facebook">Follow us on Facebook</p>
+            <a
+                className="footer__facebook"
+                href="https://www.facebook.com/Harry-Grant-Taxidermy-182137311855321/"
+                target="_blank" rel="noopener noreferrer"
+            >
+                <p>Follow us on Facebook</p>
+            </a>
             <div className="footer__middle-container">
                 <img src={footerLogo} alt="footer-logo" className="footer__logo"/>
                 <p className="footer__credit">Website created by 

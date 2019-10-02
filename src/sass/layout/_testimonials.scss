@@ -1,12 +1,12 @@
 .testimonials {
     display: grid;
     grid-template-columns: 1fr 20rem 50rem 20rem 1fr;
-    grid-template-rows: 12rem 55rem;
+    grid-template-rows: 13rem 55rem;
     margin-top: 8rem;
 
     @include respond(phone) {
         grid-template-columns: 1fr 14rem 33rem 14rem 1fr;
-        grid-template-rows: 11rem 55rem;
+        grid-template-rows: 13rem 55rem;
     }
 
     @include respond(small-phone) {
@@ -28,13 +28,15 @@
     }
 
     &__paragraph-1 {
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         grid-row: 1 / 2;
         align-self: flex-end;
 
         font-family: $font-subheading;
         color: $color-grey;
         text-align: left;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     &__container {

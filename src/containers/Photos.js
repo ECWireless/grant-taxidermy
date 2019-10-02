@@ -116,7 +116,13 @@ export default class Photos extends Component {
                     </div>
                 }
                 {this.state.photoSelected && <div onClick={this.onSelectPhoto} ><Backdrop /></div>}
-                <p className="photos__facebook">CHECK OUT MORE PHOTOS ON FACEBOOK</p>
+                <a
+                    className="photos__facebook"
+                    href="https://www.facebook.com/Harry-Grant-Taxidermy-182137311855321/"
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    <p>CHECK OUT MORE PHOTOS ON FACEBOOK</p>
+                </a>
             </div>
         )
     }

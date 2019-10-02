@@ -34,11 +34,11 @@ ORDER: Base + typography > general layout + grid > grid layout > components
 
 @mixin respond($breakpoint) {
     @if $breakpoint == small-phone {
-        @media(max-width: 23.5em) { @content }; // 375px
+        @media(max-width: 31.25em) { @content }; // 500px
     }
 
     @if $breakpoint == phone {
-        @media(max-width: 37.5em) { @content }; // 600px
+        @media(max-width: 45em) { @content }; // 720px
     }
 
     @if $breakpoint == tab-port {

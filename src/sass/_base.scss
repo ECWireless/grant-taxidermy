@@ -7,19 +7,23 @@
 }
 
 html {
+
+    // Increased 5%
+    
     font-size: 62.5%;
 
     @include respond(tab-land) {
-        font-size: 56.25%;
+        font-size: 61.25%;
     }
  
     @include respond(tab-port) {
-        font-size: 50%;
+        font-size: 51%;
     }
 
     @include respond(big-desktop) {
-        font-size: 75%;
+        font-size: 80%;
     }
+    
 }
 
 body {

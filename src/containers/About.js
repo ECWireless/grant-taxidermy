@@ -10,13 +10,11 @@ export default function About() {
             <h1 className="about__heading-1 heading-1">About Harry</h1>
             <div className="about__border" />
 
-            <div className="about__headshot">
-                <h1 className="heading-3">HEADSHOT</h1>
-            </div>
+            <div className="about__headshot" />
 
             <div className="about__description-container">
                 <img src={AboutTriangle} alt="about-triangle" className="about__triangle" />
-                <p className="about__paragraph-1">Harry Grant Taxidermy is a reputable and full-insured 
+                <p className="about__paragraph-1">Harry Grant Taxidermy is a reputable and fully-insured 
                     taxidermy studio catering to the quality conscious 
                     sportsman. Our clients are looking for a finely crafted, 
                     eye-catching trophy that will last a lifetime. The result
