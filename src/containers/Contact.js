@@ -66,7 +66,14 @@ export default class Contact extends Component {
                     <div className="contact__info-paragraph-4">Sunday: 9am - 6pm</div>
                 </div>
 
-                <form onSubmit={this.handleSubmit} className="form">
+                <iframe
+                    className="form"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSckT8FkPbqfsbUUJk1Lne4xLEZAOdE0Eke8KAg3tjMJumdffA/viewform?embedded=true"
+                    title="contact" width="640" height="891" frameBorder="0" marginHeight="0" marginWidth="0"
+                    >Loading…
+                </iframe>
+
+                {/* <form onSubmit={this.handleSubmit} className="form">
                     <div className="form__group">
                             <input type="text" className="form__input" placeholder="Name" id="name" required
                                 onChange={this.handleNameChange}
@@ -95,7 +102,7 @@ export default class Contact extends Component {
                             <label htmlFor="message" className="form__label">Message</label>
                     </div>
                     <button type="submit" className="contact__button">Submit</button>
-                </form>
+                </form> */}
             <div className="contact__background-block" />
         </div>
         )

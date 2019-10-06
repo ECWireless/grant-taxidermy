@@ -1,19 +1,26 @@
 // CONTACT FORM
 
 .form {
-    grid-column: 4 / 5;
+    grid-column: 4 / 6;
     grid-row: 2 / -1;
     align-self: center;
-    margin-top: 6rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    justify-self: center;
+    margin-top: 10rem;
     z-index: 2;
     text-align: center;
 
+    @include respond(tab-land) {
+        transform: scale(.8);
+        grid-column: 4 / 6;
+    }
+
+    @include respond(tab-port) {
+        transform: scale(.5);
+        grid-column: 4 / 6;
+    }
+
     @include respond(phone) {
         grid-column: 3 / 5;
-        justify-self: center;
-        padding-left: 7rem;
     }
 
     @include respond(small-phone) {

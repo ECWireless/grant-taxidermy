@@ -4,7 +4,7 @@
     background-color: #818181;
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr) 10rem repeat(2, 1fr);
 
     @include respond(phone) {
         margin-top: 6rem;
@@ -84,7 +84,7 @@
 
         @include respond(small-phone) {
             font-size: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 
