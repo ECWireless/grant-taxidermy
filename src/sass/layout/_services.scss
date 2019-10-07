@@ -4,9 +4,13 @@
     grid-template-rows: 13rem 10rem 10rem 20rem;
     margin-top: 8rem;
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 23.333rem 23.333rem 23.333rem 1fr;
+    }
+
     @include respond(phone) {
-        grid-template-columns: 1fr 20rem 20rem 20rem 1fr;
-        grid-template-rows: 13rem 10rem 10rem 15rem;
+        grid-template-columns: 1fr repeat(3, 16.666rem) 1fr;
+        grid-template-rows: 13rem 10rem 15rem 15rem;
         margin-top: 6rem;
     }
 

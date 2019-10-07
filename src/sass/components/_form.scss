@@ -5,25 +5,32 @@
     grid-row: 2 / -1;
     align-self: center;
     justify-self: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     z-index: 2;
     text-align: center;
 
+    transform: scale(.6);
+
+    @include respond(big-desktop) {
+        transform: scale(1);
+    }
+
     @include respond(tab-land) {
-        transform: scale(.8);
         grid-column: 4 / 6;
     }
 
     @include respond(tab-port) {
         transform: scale(.5);
-        grid-column: 4 / 6;
+        grid-column: 3 / 5;
     }
 
     @include respond(phone) {
+        transform: scale(.4);
         grid-column: 3 / 5;
     }
 
     @include respond(small-phone) {
+        transform: scale(.5);
         grid-column: 1 / -1;
         grid-row: 3 / 4;
         margin-top: 0;

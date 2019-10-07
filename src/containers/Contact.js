@@ -69,7 +69,7 @@ export default class Contact extends Component {
                 <iframe
                     className="form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSckT8FkPbqfsbUUJk1Lne4xLEZAOdE0Eke8KAg3tjMJumdffA/viewform?embedded=true"
-                    title="contact" width="640" height="891" frameBorder="0" marginHeight="0" marginWidth="0"
+                    title="contact" width="640" height="910" frameBorder="0" marginHeight="0" marginWidth="0"
                     >Loading…
                 </iframe>
 

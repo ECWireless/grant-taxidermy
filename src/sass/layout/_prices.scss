@@ -4,8 +4,12 @@
     grid-template-rows: 13rem 50rem 42rem;
     margin-top: 8rem;
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 35rem 35rem 1fr;
+    }
+
     @include respond(phone) {
-        grid-template-columns: 1fr 30rem 30rem 1fr;
+        grid-template-columns: 1fr 23rem 27rem 1fr;
         grid-template-rows: 13rem 50rem 42rem;
     }
 
@@ -52,10 +56,12 @@
 
         @include respond(phone) {
             width: 25rem;
+            margin-left: -4rem;
         }
 
         @include respond(small-phone) {
             max-width: 14rem;
+            margin-left: -1rem;
         }
     }
 
@@ -114,6 +120,7 @@
             padding-left: 2rem;
             align-self: flex-start;
             border-radius: 20px;
+            margin-top: 4rem;
         }
     }
 
@@ -130,6 +137,7 @@
             width: 2rem;
             height: 18rem;
             align-self: flex-start;
+            margin-top: 4rem;
         }
     }
 
